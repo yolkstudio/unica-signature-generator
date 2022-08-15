@@ -117,6 +117,7 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
         onChange={(option) => setSelectedSignatureType(option!.value)}
         options={signatureTypeOptions}
         styles={style}
+        isSearchable={false}
       />
 
       <div className="buttons">
