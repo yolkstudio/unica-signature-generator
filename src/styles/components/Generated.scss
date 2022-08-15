@@ -1,0 +1,72 @@
+#outlook a {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+table,
+td {
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+p {
+  display: block;
+  margin: 13px 0;
+}
+
+@media only screen and (min-width: 480px) {
+  .mj-column-px-80 {
+    width: 80px !important;
+    max-width: 80px;
+  }
+
+  .mj-column-px-520 {
+    width: 520px !important;
+    max-width: 520px;
+  }
+
+  .mj-column-per-100 {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .moz-text-html .mj-column-px-80 {
+    width: 80px !important;
+    max-width: 80px;
+  }
+
+  .moz-text-html .mj-column-px-520 {
+    width: 520px !important;
+    max-width: 520px;
+  }
+
+  .moz-text-html .mj-column-per-100 {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  table.mj-full-width-mobile {
+    width: 100% !important;
+  }
+
+  td.mj-full-width-mobile {
+    width: auto !important;
+  }
+}

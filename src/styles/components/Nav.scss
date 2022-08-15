@@ -1,0 +1,11 @@
+nav.navbar {
+    display: flex;
+
+    .logo {
+        margin: 20px 40px;
+
+        img {
+            height: 40px;
+        }
+    }
+}

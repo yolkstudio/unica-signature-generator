@@ -1,0 +1,101 @@
+.form {
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 20px 0 rgb(171 171 171 / 44%);
+    background: #fff;
+
+    label {
+        display: block;
+        color: var(--color-labels);
+    }
+
+    input {
+        height: 40px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #e4e2e2;
+        width: 100%;
+        color: var(--color-primary);
+        font-size: 16px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-weight: 500;
+
+        &:disabled {
+            background-color: #eeeeee;
+            cursor: not-allowed;
+        }
+    }
+
+    .banner-img {
+        margin: 3px 0 10px 0;
+
+        .no-selection {
+            width: 100%;
+            height: 63px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border: 1px solid var(--color-labels);
+            border-radius: 5px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            color: var(--color-labels);
+
+            &.selected {
+                box-shadow: 0 0 0 3px var(--color-primary);
+                color: var(--color-primary);
+            }
+        }
+
+        img {
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+
+            &.selected {
+                box-shadow: 0 0 0 3px var(--color-primary);
+            }
+        }
+    }
+
+    .buttons {
+        margin-top: 15px;
+
+        .or {
+            margin: 10px auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        button.button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--color-primary);
+            color: var(--color-white-text);
+            border: 1px solid #e4e2e2;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 17px;
+
+            &:disabled {
+                background-color: #b0b0b0;
+                color: #8b8b8b;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    #signature-type, #signature-size {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #e4e2e2;
+    }
+}

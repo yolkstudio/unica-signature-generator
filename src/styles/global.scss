@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Thasadith:400,500,700");
+
+:root {
+    --color-primary: #61508F;
+    --color-secondary: #f1f5f8;
+    --color-complimentary: #b8eee4;
+    --color-button-bg: rgb(253, 236, 229);
+    --color-button-text: #fff;
+    --color-white-text: #fff;
+    --color-labels: #6d7b86;
+    --color-text: #212529
+}
+
+input:focus-visible {
+    border-color: var(--color-primary) !important;
+    outline: none;
+}
+
+body, input, button {
+    font-family: "Thasadith", sans-serif;
+    font-weight: 500;
+    font-variant-numeric: lining-nums;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
