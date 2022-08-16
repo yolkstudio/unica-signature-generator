@@ -320,7 +320,7 @@ const Generated = ({
                                           <img
                                             alt={"Unica banner"}
                                             height="auto"
-                                            src="/img/unica_logo.gif"
+                                            src="https://signatures.unica.cz/img/unica_logo.gif"
                                             style={{
                                               border: 0,
                                               display: "block",
