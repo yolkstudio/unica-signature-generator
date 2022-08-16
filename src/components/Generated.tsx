@@ -304,36 +304,20 @@ const Generated = ({
                                     wordBreak: "break-word",
                                   }}
                                 >
-                                  <table
-                                    cellPadding={0}
-                                    cellSpacing={0}
-                                    role="presentation"
+                                  <img
+                                    alt={"Unica banner"}
+                                    height="auto"
+                                    src="https://signatures.unica.cz/img/unica_logo.gif"
                                     style={{
-                                      borderCollapse: "collapse",
-                                      borderSpacing: 0,
                                       border: 0,
+                                      display: "block",
+                                      outline: "none",
+                                      textDecoration: "none",
+                                      height: "auto",
+                                      width: "100%",
+                                      maxWidth: "100px",
                                     }}
-                                  >
-                                    <tbody>
-                                      <tr>
-                                        <td style={{ width: "80px" }}>
-                                          <img
-                                            alt={"Unica banner"}
-                                            height="auto"
-                                            src="https://signatures.unica.cz/img/unica_logo.gif"
-                                            style={{
-                                              border: 0,
-                                              display: "block",
-                                              outline: "none",
-                                              textDecoration: "none",
-                                              height: "auto",
-                                              width: "100%",
-                                            }}
-                                          />
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                  />
                                 </td>
                               </tr>
                               {(signatureType === SignatureType.PRAGUE ||
@@ -392,7 +376,7 @@ const Generated = ({
                               {signatureType === SignatureType.BOTH && (
                                 <tr>
                                   <td
-                                    align="center"
+                                    align="left"
                                     style={{
                                       fontSize: 0,
                                       padding: 0,
@@ -404,8 +388,8 @@ const Generated = ({
                                       style={{
                                         borderTop: "solid 1px #b4b6b8",
                                         fontSize: "1px",
-                                        margin: "0px auto",
                                         width: "100%",
+                                        maxWidth: "230px",
                                       }}
                                     ></p>
                                     {/*[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #b4b6b8;font-size:1px;margin:0px auto;width:100%;" role="presentation" width="100%" ><tr><td style="height:0;line-height:0;"> &nbsp;
