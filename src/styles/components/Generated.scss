@@ -2,6 +2,24 @@
   padding: 0;
 }
 
+*, body, table, td, a {
+    text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+#table-root, #table-root * {
+  max-width:400px;
+}
+
+table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+
+img {
+  width: 100% !important;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -64,9 +82,11 @@ p {
 @media only screen and (max-width: 480px) {
   table.mj-full-width-mobile {
     width: 100% !important;
+    max-width: 600px;
   }
 
   td.mj-full-width-mobile {
     width: auto !important;
+    max-width: 600px;
   }
 }

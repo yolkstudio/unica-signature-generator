@@ -12,7 +12,7 @@ const Generated = ({
   signatureType,
 }: GeneratedProps) => {
   return (
-    <div style={{ wordSpacing: "normal" }}>
+    <div id={"table-root"} style={{ wordSpacing: "normal", width: "100%" }}>
       {/*[if mso | IE]><table align="left" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:100%;" width="100%" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]*/}
       <div style={{ margin: "0px auto", maxWidth: "100%" }}>
         <table
@@ -154,7 +154,7 @@ const Generated = ({
                                   <div
                                     style={{
                                       fontFamily: "Times New Roman",
-                                      fontSize: 20,
+                                      fontSize: "20px",
                                       fontStyle: "italic",
                                       lineHeight: "24px",
                                       textAlign: "left",
@@ -171,7 +171,7 @@ const Generated = ({
                                   style={{
                                     fontSize: 0,
                                     padding: 0,
-                                    paddingTop: 10,
+                                    paddingTop: "10px",
                                     wordBreak: "break-word",
                                   }}
                                 >
@@ -256,14 +256,14 @@ const Generated = ({
                                   style={{
                                     fontSize: 0,
                                     padding: 0,
-                                    paddingTop: 10,
+                                    paddingTop: "10px",
                                     wordBreak: "break-word",
                                   }}
                                 >
                                   <div
                                     style={{
                                       fontFamily: "Arial",
-                                      fontSize: 11,
+                                      fontSize: "11px",
                                       lineHeight: "15px",
                                       textAlign: "left",
                                       color: "#a7a9ab",
@@ -298,8 +298,8 @@ const Generated = ({
                                   style={{
                                     fontSize: 0,
                                     padding: "10px 25px",
-                                    paddingTop: 20,
-                                    paddingBottom: 20,
+                                    paddingTop: "20px",
+                                    paddingBottom: "20px",
                                     paddingLeft: 0,
                                     wordBreak: "break-word",
                                   }}
@@ -316,11 +316,11 @@ const Generated = ({
                                   >
                                     <tbody>
                                       <tr>
-                                        <td style={{ width: 80 }}>
+                                        <td style={{ width: "80px" }}>
                                           <img
                                             alt={"Unica banner"}
                                             height="auto"
-                                            src="https://signatures.yolkone.com/unica/assets/img/baner.jpg"
+                                            src="/img/unica_logo.gif"
                                             style={{
                                               border: 0,
                                               display: "block",
@@ -328,9 +328,7 @@ const Generated = ({
                                               textDecoration: "none",
                                               height: "auto",
                                               width: "100%",
-                                              fontSize: 13,
                                             }}
-                                            width={80}
                                           />
                                         </td>
                                       </tr>
@@ -347,14 +345,14 @@ const Generated = ({
                                       style={{
                                         fontSize: 0,
                                         padding: 0,
-                                        paddingBottom: 2,
+                                        paddingBottom: "2px",
                                         wordBreak: "break-word",
                                       }}
                                     >
                                       <div
                                         style={{
                                           fontFamily: "Arial",
-                                          fontSize: 13,
+                                          fontSize: "13px",
                                           textAlign: "left",
                                           color: "#a7a9ab",
                                         }}
@@ -369,14 +367,14 @@ const Generated = ({
                                       style={{
                                         fontSize: 0,
                                         padding: 0,
-                                        paddingBottom: 10,
+                                        paddingBottom: "10px",
                                         wordBreak: "break-word",
                                       }}
                                     >
                                       <div
                                         style={{
                                           fontFamily: "Arial",
-                                          fontSize: 11,
+                                          fontSize: "11px",
                                           lineHeight: "15px",
                                           textAlign: "left",
                                           color: "#a7a9ab",
@@ -398,14 +396,14 @@ const Generated = ({
                                     style={{
                                       fontSize: 0,
                                       padding: 0,
-                                      paddingBottom: 10,
+                                      paddingBottom: "10px",
                                       wordBreak: "break-word",
                                     }}
                                   >
                                     <p
                                       style={{
                                         borderTop: "solid 1px #b4b6b8",
-                                        fontSize: 1,
+                                        fontSize: "1px",
                                         margin: "0px auto",
                                         width: "100%",
                                       }}
@@ -424,14 +422,14 @@ const Generated = ({
                                       style={{
                                         fontSize: 0,
                                         padding: 0,
-                                        paddingBottom: 2,
+                                        paddingBottom: "2px",
                                         wordBreak: "break-word",
                                       }}
                                     >
                                       <div
                                         style={{
                                           fontFamily: "Arial",
-                                          fontSize: 13,
+                                          fontSize: "13px",
                                           lineHeight: "18px",
                                           textAlign: "left",
                                           color: "#a7a9ab",
@@ -447,14 +445,14 @@ const Generated = ({
                                       style={{
                                         fontSize: 0,
                                         padding: 0,
-                                        paddingBottom: 20,
+                                        paddingBottom: "20px",
                                         wordBreak: "break-word",
                                       }}
                                     >
                                       <div
                                         style={{
                                           fontFamily: "Arial",
-                                          fontSize: 11,
+                                          fontSize: "11px",
                                           lineHeight: "15px",
                                           textAlign: "left",
                                           color: "#a7a9ab",
@@ -480,7 +478,7 @@ const Generated = ({
                                   <div
                                     style={{
                                       fontFamily: "Arial",
-                                      fontSize: 11,
+                                      fontSize: "11px",
                                       lineHeight: "15px",
                                       textAlign: "left",
                                       color: "#a7a9ab",
