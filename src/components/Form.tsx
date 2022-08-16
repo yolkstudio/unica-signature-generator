@@ -65,7 +65,7 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
       <label htmlFor="name">Jméno</label>
       <input
         id="name"
-        placeholder="Edouard Perra"
+        placeholder="Ing. Dita Groligová"
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
@@ -75,7 +75,7 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
       <label htmlFor="occupation">Pozice</label>
       <input
         id="occupation"
-        placeholder="Management board member"
+        placeholder="Head of Coordination, Brno"
         type="text"
         value={occupation}
         onChange={(e) => setOccupation(e.target.value)}
@@ -95,7 +95,7 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
       <label htmlFor="email">Email</label>
       <input
         id="email"
-        placeholder="edouard.perra@unica.cz"
+        placeholder="dita@unica.cz"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
