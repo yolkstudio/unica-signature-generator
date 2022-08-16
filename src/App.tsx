@@ -83,9 +83,10 @@ function App() {
             Po stisknutí tlačítka <b>Generovat</b> budete přesměrováni na
             stránku s vaším podpisem. Chcete-li jej použít, stačí stisknout{" "}
             <b>Ctrl+A</b> a <b>Ctrl+C</b> (<b>Cmd+A</b> a <b>Cmd+C</b> pro
-            Operační Systém Mac).
+            macOS).
             <br /> Pro lepší výsledky doporučujeme používat prohlížeč Google
-            Chrome.
+            Chrome. <br /> V případě, že se vám nenačítá animované logo v
+            podpisu, vypněte si pro tuto stránku adblock.
           </p>
           <p className="description">
             Pokud stisknete <b>Kopírovat do schránky</b>, váš podpis se
