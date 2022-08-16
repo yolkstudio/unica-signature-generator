@@ -319,7 +319,7 @@ const Generated = ({
                                         <td style={{ width: "80px" }}>
                                           <img
                                             alt={"Unica banner"}
-                                            height="auto"
+                                            height="50px"
                                             src="https://signatures.unica.cz/img/unica_logo.gif"
                                             style={{
                                               border: 0,
@@ -392,7 +392,7 @@ const Generated = ({
                               {signatureType === SignatureType.BOTH && (
                                 <tr>
                                   <td
-                                    align="center"
+                                    align="left"
                                     style={{
                                       fontSize: 0,
                                       padding: 0,
@@ -404,8 +404,7 @@ const Generated = ({
                                       style={{
                                         borderTop: "solid 1px #b4b6b8",
                                         fontSize: "1px",
-                                        margin: "0px auto",
-                                        width: "100%",
+                                        width: "220px",
                                       }}
                                     ></p>
                                     {/*[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #b4b6b8;font-size:1px;margin:0px auto;width:100%;" role="presentation" width="100%" ><tr><td style="height:0;line-height:0;"> &nbsp;
