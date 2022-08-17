@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import banners from "../banners";
 import "../styles/components/Form.scss";
 import Select from "react-select";
+import { Cloudinary } from "@cloudinary/url-gen";
 
 export enum SignatureType {
   NO_ADDRESS,
@@ -36,12 +37,17 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
   const [signatureType, setSelectedSignatureType] = useState<SignatureType>(
     SignatureType.BOTH
   );
+  const [publicId, setPublicId] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const isButtonDisabled = (): boolean => {
-    let result =
-      name === "" || occupation === "" || phone === "" || email === "";
-
-    return result;
+    return (
+      name === "" ||
+      occupation === "" ||
+      phone === "" ||
+      email === "" ||
+      publicId === ""
+    );
   };
 
   const selectBanner = (id: number) => {
@@ -59,6 +65,39 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
   };
 
   const buttonDisabled = isButtonDisabled();
+
+  // @ts-ignore
+  const uploadWidget = window.cloudinary.createUploadWidget(
+    {
+      cloudName: "yolkstudio",
+      uploadPreset: "cyxvza2f",
+      // cropping: true,
+      styles: {
+        palette: {
+          window: "#FFF",
+          windowBorder: "#90A0B3",
+          tabIcon: "#61508F",
+          menuIcons: "#5A616A",
+          textDark: "#000000",
+          textLight: "#FFFFFF",
+          link: "#61508F",
+          action: "#61508F",
+          inactiveTabIcon: "#0E2F5A",
+          error: "#F44235",
+          inProgress: "#907bd7",
+          complete: "#20B832",
+          sourceBg: "#E4EBF1",
+        },
+      },
+    },
+    async (error: any, result: any) => {
+      if (!error && result && result.event === "success") {
+        await setPublicId(result.info.public_id);
+        console.log(result);
+        await setIsLoading(false);
+      } else await setIsLoading(false);
+    }
+  );
 
   return (
     <div className="form">
@@ -119,6 +158,31 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
         styles={style}
         isSearchable={false}
       />
+      <div className="buttons">
+        <label htmlFor={"upload-button"}>Obrázek</label>
+
+        <button
+          id="upload-button"
+          className="button"
+          onClick={() => {
+            setIsLoading(true);
+            uploadWidget.open();
+          }}
+          disabled={publicId?.length > 0 || isLoading}
+        >
+          {isLoading ? (
+            <img
+              className="button-loader"
+              src={"/img/loader.svg"}
+              alt={"loader"}
+            />
+          ) : publicId?.length > 0 ? (
+            "Obrázek úspěšně nahrán"
+          ) : (
+            "Nahrát obrázek"
+          )}
+        </button>
+      </div>
 
       <div className="buttons">
         <button
@@ -133,6 +197,7 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
               bannerImg,
               bannerURL,
               signatureType,
+              publicId,
             });
           }}
         >
@@ -151,6 +216,7 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
               bannerImg,
               bannerURL,
               signatureType,
+              publicId,
             });
           }}
         >
@@ -176,4 +242,5 @@ export type FormData = {
   bannerImg: string;
   bannerURL: string;
   signatureType: SignatureType;
+  publicId: string;
 };

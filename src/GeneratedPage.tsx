@@ -14,12 +14,15 @@ const GeneratedPage = () => {
   const bannerImg = query.get("banner-img");
   const bannerURL = query.get("banner-url");
   const type = query.get("type");
+  const publicId = query.get("public-id");
+
+  console.log("test", publicId);
 
   useEffect(() => {
-    if (!name || !occupation || !phone || !email || !type) {
+    if (!name || !occupation || !phone || !email || !type || !publicId) {
       navigate("/");
     }
-  }, [navigate, email, name, phone, occupation, type]);
+  }, [navigate, email, name, phone, occupation, type, publicId]);
 
   return (
     <Generated
@@ -30,6 +33,7 @@ const GeneratedPage = () => {
       bannerImg={bannerImg as string}
       bannerURL={bannerURL as string}
       signatureType={Number(type) as SignatureType}
+      publicId={publicId as string}
     />
   );
 };

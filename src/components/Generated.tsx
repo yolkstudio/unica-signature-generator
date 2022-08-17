@@ -1,6 +1,12 @@
 import React from "react";
 import { SignatureType } from "./Form";
 import "../styles/components/Generated.scss";
+import { api } from "../api";
+import { thumbnail } from "@cloudinary/url-gen/actions/resize";
+import { focusOn } from "@cloudinary/url-gen/qualifiers/gravity";
+import { FocusOn } from "@cloudinary/url-gen/qualifiers/focusOn";
+import { byRadius, max } from "@cloudinary/url-gen/actions/roundCorners";
+import { AdvancedImage } from "@cloudinary/react";
 
 const Generated = ({
   name,
@@ -10,7 +16,14 @@ const Generated = ({
   bannerImg,
   bannerURL,
   signatureType,
+  publicId,
 }: GeneratedProps) => {
+  const avatar = api.image(publicId);
+  avatar
+    .resize(thumbnail().width(60).height(60).gravity(focusOn(FocusOn.face())))
+    .roundCorners(max());
+  const url = avatar.toURL();
+
   return (
     <div id={"table-root"} style={{ wordSpacing: "normal", width: "100%" }}>
       {/*[if mso | IE]><table align="left" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:100%;" width="100%" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]*/}
@@ -31,86 +44,85 @@ const Generated = ({
                   textAlign: "left",
                 }}
               >
-                {/*[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:80px;" ><![endif]*/}
-                {/*<div*/}
-                {/*    className="mj-column-px-80 mj-outlook-group-fix"*/}
-                {/*    style={{*/}
-                {/*        fontSize: 0,*/}
-                {/*        textAlign: "left",*/}
-                {/*        direction: "ltr",*/}
-                {/*        display: "inline-block",*/}
-                {/*        verticalAlign: "middle",*/}
-                {/*        width: "100%"*/}
-                {/*    }}*/}
-                {/*>*/}
-                {/*    <table*/}
-                {/*        cellPadding={0}*/}
-                {/*        cellSpacing={0}*/}
-                {/*        role="presentation"*/}
-                {/*        width="100%"*/}
-                {/*        style={{ border: 0 }}*/}
-                {/*    >*/}
-                {/*        <tbody>*/}
-                {/*        <tr>*/}
-                {/*            <td style={{ verticalAlign: "middle", padding: 0 }}>*/}
-                {/*                <table*/}
-                {/*                    cellPadding={0}*/}
-                {/*                    cellSpacing={0}*/}
-                {/*                    role="presentation"*/}
-                {/*                    width="100%"*/}
-                {/*                    style={{ border: 0 }}*/}
-                {/*                >*/}
-                {/*                    <tbody>*/}
-                {/*                    <tr>*/}
-                {/*                        <td*/}
-                {/*                            align="left"*/}
-                {/*                            style={{*/}
-                {/*                                fontSize: 0,*/}
-                {/*                                padding: 0,*/}
-                {/*                                paddingRight: 20,*/}
-                {/*                                wordBreak: "break-word"*/}
-                {/*                            }}*/}
-                {/*                        >*/}
-                {/*                            <table*/}
-                {/*                                cellPadding={0}*/}
-                {/*                                cellSpacing={0}*/}
-                {/*                                role="presentation"*/}
-                {/*                                style={{*/}
-                {/*                                    borderCollapse: "collapse",*/}
-                {/*                                    borderSpacing: 0,*/}
-                {/*                                    border: 0*/}
-                {/*                                }}*/}
-                {/*                            >*/}
-                {/*                                <tbody>*/}
-                {/*                                <tr>*/}
-                {/*                                    <td style={{ width: 60 }}>*/}
-                {/*                                        <img*/}
-                {/*                                            height="auto"*/}
-                {/*                                            src="https://signatures.yolkone.com/unica/assets/img/face.png"*/}
-                {/*                                            style={{*/}
-                {/*                                                border: 0,*/}
-                {/*                                                display: "block",*/}
-                {/*                                                outline: "none",*/}
-                {/*                                                textDecoration: "none",*/}
-                {/*                                                height: "auto",*/}
-                {/*                                                width: "100%",*/}
-                {/*                                                fontSize: 13*/}
-                {/*                                            }}*/}
-                {/*                                            width={60}*/}
-                {/*                                        />*/}
-                {/*                                    </td>*/}
-                {/*                                </tr>*/}
-                {/*                                </tbody>*/}
-                {/*                            </table>*/}
-                {/*                        </td>*/}
-                {/*                    </tr>*/}
-                {/*                    </tbody>*/}
-                {/*                </table>*/}
-                {/*            </td>*/}
-                {/*        </tr>*/}
-                {/*        </tbody>*/}
-                {/*    </table>*/}
-                {/*</div>*/}
+                <div
+                  className="mj-column-px-80 mj-outlook-group-fix"
+                  style={{
+                    fontSize: 0,
+                    textAlign: "left",
+                    direction: "ltr",
+                    display: "inline-block",
+                    verticalAlign: "middle",
+                    width: "100%",
+                  }}
+                >
+                  <table
+                    cellPadding={0}
+                    cellSpacing={0}
+                    role="presentation"
+                    width="100%"
+                  >
+                    <tbody>
+                      <tr>
+                        <td style={{ verticalAlign: "middle", padding: 0 }}>
+                          <table
+                            cellPadding={0}
+                            cellSpacing={0}
+                            role="presentation"
+                            style={{}}
+                            width="100%"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  align="left"
+                                  style={{
+                                    fontSize: 0,
+                                    padding: 0,
+                                    paddingRight: 20,
+                                    wordBreak: "break-word",
+                                  }}
+                                >
+                                  <table
+                                    cellPadding={0}
+                                    cellSpacing={0}
+                                    role="presentation"
+                                    style={{
+                                      borderCollapse: "collapse",
+                                      borderSpacing: 0,
+                                    }}
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td style={{ width: "60px" }}>
+                                          <img
+                                            height="auto"
+                                            src={url}
+                                            alt={"Portrait image"}
+                                            style={{
+                                              border: 0,
+                                              display: "block",
+                                              outline: "none",
+                                              textDecoration: "none",
+                                              height: "auto",
+                                              width: "60px",
+                                              fontSize: "13px",
+                                            }}
+                                            width={"60px"}
+                                          />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
                 {/*[if mso | IE]></td><td class="" style="vertical-align:middle;width:520px;" ><![endif]*/}
                 <div
                   className="mj-column-px-520 mj-outlook-group-fix"
@@ -128,7 +140,6 @@ const Generated = ({
                     cellSpacing={0}
                     role="presentation"
                     width="100%"
-                    style={{ border: 0 }}
                   >
                     <tbody>
                       <tr>
@@ -137,7 +148,7 @@ const Generated = ({
                             cellPadding={0}
                             cellSpacing={0}
                             role="presentation"
-                            style={{ border: 0 }}
+                            style={{}}
                             width="100%"
                           >
                             <tbody>
@@ -154,7 +165,7 @@ const Generated = ({
                                   <div
                                     style={{
                                       fontFamily: "Times New Roman",
-                                      fontSize: "20px",
+                                      fontSize: "24px",
                                       fontStyle: "italic",
                                       lineHeight: "24px",
                                       textAlign: "left",
@@ -171,14 +182,14 @@ const Generated = ({
                                   style={{
                                     fontSize: 0,
                                     padding: 0,
-                                    paddingTop: "10px",
+                                    paddingTop: 10,
                                     wordBreak: "break-word",
                                   }}
                                 >
                                   <div
                                     style={{
                                       fontFamily: "Arial",
-                                      fontSize: 9,
+                                      fontSize: 8,
                                       letterSpacing: 2,
                                       lineHeight: "8px",
                                       textAlign: "left",
@@ -527,4 +538,5 @@ type GeneratedProps = {
   bannerImg?: string;
   bannerURL?: string;
   signatureType: SignatureType;
+  publicId: string;
 };

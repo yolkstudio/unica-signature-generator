@@ -20,12 +20,14 @@ function App() {
     bannerImg,
     bannerURL,
     signatureType,
+    publicId,
   }: FormData) => {
     let query = `?name=${encodeURIComponent(name)}`;
     query += `&occupation=${encodeURIComponent(occupation)}`;
     query += `&phone=${encodeURIComponent(phone)}`;
     query += `&email=${encodeURIComponent(email)}`;
     query += `&type=${encodeURIComponent(signatureType)}`;
+    query += `&public-id=${encodeURIComponent(publicId)}`;
     if (bannerImg !== "" && bannerURL !== "") {
       query += `&banner-img=${encodeURIComponent(bannerImg)}`;
       query += `&banner-url=${encodeURIComponent(bannerURL)}`;
@@ -42,6 +44,7 @@ function App() {
     bannerImg,
     bannerURL,
     signatureType,
+    publicId,
   }: FormData) => {
     let result = "<meta charset='utf-8'>";
     result += ReactDOMServer.renderToString(
@@ -53,6 +56,7 @@ function App() {
         bannerImg={bannerImg}
         bannerURL={bannerURL}
         signatureType={signatureType}
+        publicId={publicId}
       />
     );
 

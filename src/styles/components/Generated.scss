@@ -15,11 +15,6 @@
 
 table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
 
-img {
-  width: 100% !important;
-}
-
-
 a {
   text-decoration: none;
 }
@@ -45,15 +40,17 @@ p {
   margin: 13px 0;
 }
 
-@media only screen and (min-width: 480px) {
+
+
+@media only screen and (min-width:480px) {
   .mj-column-px-80 {
     width: 80px !important;
     max-width: 80px;
   }
 
   .mj-column-px-520 {
-    width: 520px !important;
-    max-width: 520px;
+    width: 270px !important;
+    max-width: 270px;
   }
 
   .mj-column-per-100 {
@@ -82,11 +79,9 @@ p {
 @media only screen and (max-width: 480px) {
   table.mj-full-width-mobile {
     width: 100% !important;
-    max-width: 600px;
   }
 
   td.mj-full-width-mobile {
     width: auto !important;
-    max-width: 600px;
   }
 }
