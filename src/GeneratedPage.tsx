@@ -16,8 +16,6 @@ const GeneratedPage = () => {
   const type = query.get("type");
   const publicId = query.get("public-id");
 
-  console.log("test", publicId);
-
   useEffect(() => {
     if (!name || !occupation || !phone || !email || !type || !publicId) {
       navigate("/");

@@ -6,6 +6,7 @@ import ReactDOMServer from "react-dom/server";
 import "./styles/App.scss";
 import Generated from "./components/Generated";
 import copyFormatted from "./utils/copyFormattedHTML";
+import "./styles/components/Generated.scss";
 
 function App() {
   const navigate = useNavigate();
