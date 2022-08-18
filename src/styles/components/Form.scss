@@ -83,6 +83,15 @@
             font-weight: 500;
             cursor: pointer;
             font-size: 17px;
+            position:relative;
+            min-height:54px;
+
+            .button-loader {
+                position: absolute;
+                z-index: 99;
+                top: calc(50% - 100px);
+                left: calc(50% - 100px);
+            }
 
             &:disabled {
                 background-color: #b0b0b0;
