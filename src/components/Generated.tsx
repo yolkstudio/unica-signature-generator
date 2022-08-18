@@ -6,6 +6,9 @@ import { focusOn } from "@cloudinary/url-gen/qualifiers/gravity";
 import { FocusOn } from "@cloudinary/url-gen/qualifiers/focusOn";
 import { max } from "@cloudinary/url-gen/actions/roundCorners";
 import "../styles/components/Generated.scss";
+import { autoBrightness } from "@cloudinary/url-gen/actions/adjust";
+import { solid } from "@cloudinary/url-gen/actions/border";
+import { outline } from "@cloudinary/url-gen/actions/effect";
 
 const Generated = ({
   name,
@@ -19,8 +22,17 @@ const Generated = ({
 }: GeneratedProps) => {
   const avatar = api.image(publicId);
   avatar
-    .resize(thumbnail().width(60).height(60).gravity(focusOn(FocusOn.face())))
-    .roundCorners(max());
+    .resize(
+      thumbnail()
+        .width(60)
+        .height(60)
+        .zoom(0.8)
+        .gravity(focusOn(FocusOn.face()))
+    )
+    .roundCorners(max())
+    .adjust(autoBrightness())
+    .effect(outline().width(1).color("#a7a9ab"));
+
   const url = avatar.toURL();
 
   return (
@@ -74,6 +86,7 @@ const Generated = ({
                 lineHeight: "24px",
                 textAlign: "left",
                 color: "#5E528B",
+                marginBottom: "4px",
               }}
             >
               <strong>{name}</strong>
@@ -140,6 +153,7 @@ const Generated = ({
           <img
             alt={"Unica banner"}
             height="50px"
+            width={"100px"}
             src="https://signatures.unica.cz/img/unica_logo.gif"
             style={{
               border: 0,
@@ -148,6 +162,7 @@ const Generated = ({
               textDecoration: "none",
               height: "auto",
               width: "100px",
+              maxWidth: "100px",
               marginTop: "16px",
               marginBottom: "16px",
             }}

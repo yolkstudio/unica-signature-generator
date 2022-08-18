@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import banners from "../banners";
 import "../styles/components/Form.scss";
 import Select from "react-select";
-import { Cloudinary } from "@cloudinary/url-gen";
+import csLang from "../cs.json";
 
 export enum SignatureType {
   NO_ADDRESS,
@@ -66,38 +66,41 @@ const Form = ({ onGenerateClick, onCopyToClipboardClick }: FormProps) => {
 
   const buttonDisabled = isButtonDisabled();
 
-  // @ts-ignore
-  const uploadWidget = window.cloudinary.createUploadWidget(
-    {
-      cloudName: "yolkstudio",
-      uploadPreset: "cyxvza2f",
-      // cropping: true,
-      styles: {
-        palette: {
-          window: "#FFF",
-          windowBorder: "#90A0B3",
-          tabIcon: "#61508F",
-          menuIcons: "#5A616A",
-          textDark: "#000000",
-          textLight: "#FFFFFF",
-          link: "#61508F",
-          action: "#61508F",
-          inactiveTabIcon: "#0E2F5A",
-          error: "#F44235",
-          inProgress: "#907bd7",
-          complete: "#20B832",
-          sourceBg: "#E4EBF1",
+  const uploadWidget = useMemo(() => {
+    // @ts-ignore
+    return window.cloudinary.createUploadWidget(
+      {
+        cloudName: "yolkstudio",
+        uploadPreset: "cyxvza2f",
+        language: "cs",
+        text: csLang,
+        // cropping: true,
+        styles: {
+          palette: {
+            window: "#FFF",
+            windowBorder: "#90A0B3",
+            tabIcon: "#61508F",
+            menuIcons: "#5A616A",
+            textDark: "#000000",
+            textLight: "#FFFFFF",
+            link: "#61508F",
+            action: "#61508F",
+            inactiveTabIcon: "#0E2F5A",
+            error: "#F44235",
+            inProgress: "#907bd7",
+            complete: "#20B832",
+            sourceBg: "#E4EBF1",
+          },
         },
       },
-    },
-    async (error: any, result: any) => {
-      if (!error && result && result.event === "success") {
-        await setPublicId(result.info.public_id);
-        console.log(result);
-        await setIsLoading(false);
-      } else await setIsLoading(false);
-    }
-  );
+      async (error: any, result: any) => {
+        if (!error && result && result.event === "success") {
+          await setPublicId(result.info.public_id);
+          await setIsLoading(false);
+        } else await setIsLoading(false);
+      }
+    );
+  }, []);
 
   return (
     <div className="form">

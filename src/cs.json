@@ -1,0 +1,923 @@
+{
+  "cs": {
+    "or": "Nebo",
+    "back": "Zadní",
+    "advanced": "Pokročilý",
+    "close": "Zavřít",
+    "no_results": "Žádné výsledky",
+    "search_placeholder": "Hledat soubory",
+    "about_uw": "O widgetu nahrávání",
+    "search": {
+      "placeholder": "Vyhledávání...",
+      "reset": "Resetovat vyhledávání"
+    },
+    "menu": {
+      "files": "Mé soubory",
+      "web": "Webová adresa",
+      "camera": "Fotoaparát",
+      "gsearch": "Hledání obrázků",
+      "gdrive": "Disk Google",
+      "dropbox": "Dropbox",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "shutterstock": "Shutterstock",
+      "getty": "gettyimages",
+      "istock": "Istock",
+      "unsplash": "Unsplash"
+    },
+    "selection_counter": {
+      "selected": "Vybraný"
+    },
+    "actions": {
+      "upload": "Nahrát",
+      "next": "Další",
+      "clear_all": "Vymazat vše",
+      "log_out": "Odhlásit se"
+    },
+    "notifications": {
+      "general_error": "Došlo k chybě.",
+      "general_prompt": "Jsi si jistá?",
+      "limit_reached": "Nelze vybrat žádné další soubory.",
+      "invalid_add_url": "URL musí být platná.",
+      "invalid_public_id": "Veřejné ID nemůže obsahovat \\,?, &,#,%, <,>.",
+      "no_new_files": "Soubory již byly nahrány.",
+      "image_purchased": "Zakoupený obrázek",
+      "video_purchased": "Video zakoupené",
+      "purchase_failed": "Nákup selhal. Prosím zkuste to znovu.",
+      "service_logged_out": "Služba odhlášena kvůli chybě",
+      "great": "Skvělý",
+      "image_acquired": "Obrázek získal",
+      "video_acquired": "Video získané",
+      "acquisition_failed": "Akvizice selhala. Prosím zkuste to znovu."
+    },
+    "advanced_options": {
+      "public_id_ph": "Veřejné ID",
+      "tags_ph": "Přidejte značku",
+      "add_new": "Přidejte novou značku:",
+      "upload_preset_placeholder": "Nahrajte předvolbu"
+    },
+    "landscape_overlay": {
+      "title": "Režim krajiny není podporován",
+      "description": "Otočte zařízení zpět do režimu portrétu, abyste mohli pokračovat."
+    },
+    "aria_label": {
+      "close": "Zavřít",
+      "back": "Zadní"
+    },
+    "queue": {
+      "title": "Nahrát frontu",
+      "title_uploading_with_counter": "Nahrávání {{num}} obrázků",
+      "title_uploading": "Nahrávání obrázku",
+      "mini_title": "Nahráno",
+      "mini_title_uploading": "Nahrávání",
+      "show_completed": "Show dokončena",
+      "retry_failed": "Retry selhal",
+      "abort_all": "Přerušit všechny",
+      "upload_more": "Nahrajte více",
+      "done": "Hotovo",
+      "mini_upload_count": "{{num}} Nahráno",
+      "mini_failed": "{{num}} selhal",
+      "statuses": {
+        "uploading": "Nahrávání ...",
+        "error": "Chyba",
+        "uploaded": "Hotovo",
+        "aborted": "Přerušen"
+      }
+    },
+    "uploader": {
+      "filesize": {
+        "na": "N/a",
+        "b": "{{size}} bajty",
+        "k": "{{size}} KB",
+        "m": "{{size}} MB",
+        "g": "{{size}} GB",
+        "t": "{{size}} tb"
+      },
+      "errors": {
+        "file_too_large": "Velikost souboru ({{size}}) přesahuje maximální povolené ({{povoleno}})",
+        "max_dimensions_validation": "Image dimensions ({{width}} x {{height}}) jsou větší, než je maximální povoleno: ({{maxWidth}} x {{maxheight}})",
+        "min_dimensions_validation": "Image dimensions ({{width}} x {{height}}) jsou menší, než je požadováno minimum: ({{minWidth}} x {{minheight}})",
+        "unavailable": "Na",
+        "max_number_of_files": "Maximální počet překročených souborů",
+        "allowed_formats": "Formát souboru není povolen",
+        "max_file_size": "Soubor je příliš velký",
+        "min_file_size": "Soubor je příliš malý"
+      },
+      "close_mid_upload": "Existují spuštěné nahrávání. Kliknutím na OK zrušíte."
+    },
+    "crop": {
+      "title": "Oříznutí",
+      "crop_btn": "Oříznutí",
+      "skip_btn": "Přeskočit",
+      "reset_btn": "Resetovat",
+      "close_btn": "Ano",
+      "close_prompt": "Uzavření zruší všechna nahrávání, jste si jisti?",
+      "image_error": "Načítání chyby",
+      "corner_tooltip": "Přetáhněte roh pro změnu velikosti",
+      "handle_tooltip": "Přetáhněte popisovač pro změnu velikosti"
+    },
+    "camera": {
+      "capture": "Zachytit",
+      "cancel": "zrušení",
+      "take_pic": "Vyfoťte a nahrajte jej",
+      "explanation": "Ujistěte se, že váš fotoaparát je připojen a že váš prohlížeč umožňuje zachycení kamery. Až budete připraveni, klikněte na Capture.",
+      "camera_error": "Nepodařilo se přístoupit ke kameře zařízení",
+      "retry": "Opakujte kameru",
+      "file_name": "Camera _ {{time}}"
+    },
+    "dropbox": {
+      "no_auth_title": "Nahrajte soubory z vašeho účtu Dropbox.",
+      "no_auth_action": "Připojte se k Dropboxu",
+      "no_photos": "Žádné fotografie",
+      "no_files": "Žádné soubory",
+      "root_crumb": "Vykořenit",
+      "list_headers": {
+        "select": "Vybrat",
+        "name": "název",
+        "modified": "Upraveno"
+      },
+      "menu": {
+        "browse": "Procházet",
+        "recent": "Nedávné"
+      },
+      "authenticating": "Ověřování ..."
+    },
+    "facebook": {
+      "no_photos": "Žádné fotografie ...",
+      "no_auth_title": "Nahrajte soubory z vašeho účtu na Facebooku.",
+      "no_auth_action": "Připojte se k Facebooku",
+      "no_auth_statement": "Bez vašeho svolení nebudeme nic zveřejňovat.",
+      "album_subtitle": "{{count}} fotografie",
+      "menu": {
+        "uploaded": "Tvé fotky",
+        "tagged": "Fotky tebe",
+        "albums": "Alba"
+      }
+    },
+    "google_drive": {
+      "no_auth_title": "Nahrajte soubory z vašeho disku Google.",
+      "no_auth_action": "Připojte se k Disku Google",
+      "search": {
+        "placeholder": "Vyhledávání...",
+        "reset": "Resetovat vyhledávání"
+      },
+      "grid": {
+        "folders": "Složky",
+        "files": "Soubory",
+        "empty_folder": "Tato složka je prázdná."
+      },
+      "recent": "Nedávné",
+      "starred": "Hrál",
+      "my_drive": "Moje jízda",
+      "shared_drive": "Sdílené jednotky",
+      "search_results": "Výsledky vyhledávání",
+      "shared_with_me": "Sdíleno se mnou",
+      "name": "název",
+      "modifiedTime": "Naposledy změněno",
+      "modifiedByMeTime": "Naposledy mě upravila",
+      "viewedByMeTime": "Naposledy jsem otevřel mě",
+      "notifications": {
+        "retrieve_failed": "Nepodařilo se načíst data nahrávání z Disku Google."
+      }
+    },
+    "image_search": {
+      "main_title": "Hledání obrázků",
+      "inputPlaceholder": "Vyhledejte obrázky",
+      "customPlaceholder": "Hledat {{site}}",
+      "show_options": "Zobrazit možnosti",
+      "hide_options": "Skrýt možnosti",
+      "filters_title": "Místo",
+      "all": "Všechno",
+      "rights": "Práva na použití:",
+      "rights_options": {
+        "not_filtered": "Nefiltrováno podle licence",
+        "free": "zdarma k použití nebo sdílení",
+        "free_com": "zdarma používat nebo sdílet, dokonce komerčně",
+        "free_mod": "zdarma používat sdílení nebo úpravu",
+        "free_mod_com": "zdarma používat, sdílet nebo upravit, dokonce i komerčně"
+      },
+      "search_error": "Hledání selhalo, zkuste to znovu."
+    },
+    "instagram": {
+      "no_auth_title": "Nahrajte fotografie z vašeho účtu Instagramu.",
+      "no_auth_action": "Připojte se k Instagramu",
+      "header_title": "Vaše nedávné fotografie z Instagramu",
+      "authenticating": "Ověřování ..."
+    },
+    "local": {
+      "browse": "Procházet",
+      "dd_title_single": "Přetáhněte zde obrázek",
+      "dd_title_multi": "Přetáhněte obrázek zde",
+      "drop_title_single": "Vyhoďte soubor pro nahrání",
+      "drop_title_multiple": "Vytvoření souborů pro nahrání"
+    },
+    "shutterstock": {
+      "no_auth_title": "Nahrajte obrázky z vašeho účtu Shutterstock.",
+      "toggle_filters_button": "Filtry",
+      "no_auth_action": "Připojte se k Shutterstock",
+      "authenticating": "Ověřování ...",
+      "statement": "Společnost Shutterstock nabízí nejkvalitnější obrázky, fotografie, fotografie, vektory, ilustrace, videa a hudbu pro téměř jakoukoli aplikaci.",
+      "reg_link_text": "Kliknutím sem vytvořte účet Shutterstock",
+      "next_btn": "Další",
+      "media_types": {
+        "images": "snímky",
+        "videos": "Videa"
+      },
+      "filters": {
+        "more_label": "Více",
+        "sort_options": {
+          "label": "Seřazeno podle",
+          "newest": "Nový",
+          "relevance": "Relevantní",
+          "popular": "Populární",
+          "random": "Náhodný"
+        },
+        "people": {
+          "label": "Lidé",
+          "only_images_with_people": "Pouze obrázky s lidmi",
+          "only_videos_with_people": "Pouze videa s lidmi"
+        },
+        "gender": {
+          "label": "Rod",
+          "male": "mužský",
+          "female": "ženský",
+          "both": "Oba"
+        },
+        "size": {
+          "label": "Velikost",
+          "small": "Malý",
+          "medium": "Střední",
+          "large": "Velký"
+        },
+        "clear": "Průhledná",
+        "orientation": {
+          "label": "Orientace",
+          "horizontal": "Horizontální",
+          "vertical": "Vertikální"
+        },
+        "color": "Barva",
+        "colors": {
+          "red": "Červené",
+          "orange": "oranžový",
+          "amber": "jantar",
+          "yellow": "žlutá",
+          "lime": "Limetka",
+          "green": "zelená",
+          "teal": "šedozelená",
+          "turquoise": "tyrkysový",
+          "aqua": "Aqua",
+          "azure": "blankyt",
+          "blue": "modrý",
+          "purple": "nachový",
+          "orchid": "orchidej",
+          "magenta": "purpurová"
+        },
+        "safe": "Bezpečný",
+        "all_categories": "Všechny kategorie",
+        "types": {
+          "all": "Všechny typy obrázků",
+          "illustration": "Ilustrace",
+          "photo": "Fotografie",
+          "vector": "Vektor"
+        },
+        "duration": {
+          "label": "Doba trvání",
+          "short": "Krátký",
+          "short_tip": "<4 minuty",
+          "long": "Dlouho",
+          "long_tip": "> 20 minut"
+        },
+        "resolution": {
+          "label": "Rozlišení",
+          "standard_definition": "SD",
+          "standard_definition_tip": "Standardní definice",
+          "high_definition": "HD",
+          "high_definition_tip": "Vysoké rozlišení",
+          "4k": "4K",
+          "4k_tip": "4K"
+        }
+      },
+      "filter_summary": {
+        "label": "Filtry: {{- summary}}",
+        "gender": "Pouze {{value}}",
+        "people": "s {{value}} People",
+        "color": "Barva: {{value}}",
+        "category": "v {{- value}}",
+        "unsafe": "nebezpečný"
+      },
+      "purchase_page": {
+        "purchase_btn_label": "Nákup",
+        "plans": {
+          "label": "Vyberte plán",
+          "years": "roky",
+          "days": "dny",
+          "expired": "vypršel",
+          "exceeded": "překročeno",
+          "manage_plans": "Spravujte své plány Shutterstock ...",
+          "no_plan": "Váš současný plán nezahrnuje"
+        },
+        "format_and_size": {
+          "label": "Vyberte formát a velikost"
+        },
+        "aspect_ratio": "Poměr stran",
+        "author": "Autor",
+        "description": "Popis",
+        "button_label": {
+          "purchase": "Nákup",
+          "acquire": "Nákup",
+          "next": "další",
+          "upload": "nahrát",
+          "purchasing": "Nákup ...",
+          "downloading": "Stahování ..."
+        },
+        "button_description": {
+          "next": "Již vlastníte toto {{assetType}} kliknutím na další pokračování",
+          "upload": "Již vlastníte toto {{assetType}} kliknutím na nahrávání",
+          "purchasing": "Nákup - to může trvat několik sekund ...",
+          "downloading": "Stahování - to může trvat několik sekund ..."
+        },
+        "duration": "Doba trvání",
+        "fps": "FPS",
+        "sizes": {
+          "vector_eps": "Vektor",
+          "small_jpg": "Malý",
+          "medium_jpg": "Střední",
+          "huge_jpg": "Obrovský",
+          "web": "Web",
+          "sd": "SD",
+          "hd": "HD",
+          "4k": "4K"
+        },
+        "file_limit_exceeded": "Některé možnosti překročily limit velikosti souboru nahrát.",
+        "time_left": "{{time}} čas"
+      },
+      "purchase_preview": {
+        "loading_preview": "Náhled načítání",
+        "open_in_new_window": "Otevři v novém okně"
+      },
+      "dictionary": {
+        "image": "obraz",
+        "video": "video"
+      },
+      "home_page": {
+        "results_header": "Populární",
+        "categories_header": "Kategorie"
+      },
+      "search": {
+        "placeholder": "Vyhledávání...",
+        "reset": "Resetovat vyhledávání"
+      }
+    },
+    "getty": {
+      "no_auth_title": "Nahrajte obrázky z vašeho účtu Getty Images.",
+      "no_auth_action": "Připojte se k getty obrázky",
+      "no_auth_statement": "Najděte perfektní obrázek bez licenčních poplatků pro váš další projekt z nejlepší knihovny fotografií na světě kreativních fotografií, vektorových uměleckých ilustrací a skladeb.",
+      "reg_link_text": "Kliknutím sem vytvořte účet Getty Images",
+      "select": "Vybrat",
+      "search": {
+        "placeholder": "Vyhledávání...",
+        "reset": "Resetovat vyhledávání"
+      },
+      "media_types": {
+        "images": "snímky",
+        "videos": "Videa"
+      },
+      "media_types_singular": {
+        "images": "obraz",
+        "videos": "video"
+      },
+      "popular_categories": "Populární kategorie",
+      "diversity_categories": "Kategorie rozmanitosti",
+      "filters": {
+        "toggle_filters_button": "Filtry",
+        "clear": "Průhledná",
+        "available_for_creative_images": "Filtr je k dispozici pouze pro kreativní obrázky",
+        "available_for_creative_videos": "Filtr je k dispozici pouze pro kreativní videa",
+        "available_for_creative_editorial_videos": "Filtr je k dispozici pouze pro kreativní nebo redakční obrázky",
+        "sort_options": {
+          "label": "Seřazeno podle",
+          "newest": "Nejnovější",
+          "best_match": "Nejlepší shoda",
+          "most_popular": "Nejoblíbenější",
+          "random": "Náhodný"
+        },
+        "orientation": {
+          "label": "Orientace",
+          "horizontal": "Horizontální",
+          "vertical": "Vertikální",
+          "square": "Náměstí",
+          "panoramic_horizontal": "Panoramatický horizontální",
+          "panoramic_vertical": "Panoramatický vertikální"
+        },
+        "number_of_people": {
+          "label": "Počet lidí",
+          "none": "Žádný",
+          "one": "Jeden",
+          "two": "Dva",
+          "group": "Skupina"
+        },
+        "license": {
+          "label": "Typ licence",
+          "creative": "Tvořivý",
+          "editorial": "Redakční",
+          "all": "Všechno"
+        },
+        "license_model": {
+          "label": "Licenční model",
+          "rightsready": "PŘIPRAVENÁ PRÁVA",
+          "royaltyfree": "Bez autorských poplatků",
+          "all": "RF a RR"
+        },
+        "colors": {
+          "label": "Barvy"
+        },
+        "age_of_people": {
+          "label": "Stáří",
+          "baby": "Dítě",
+          "child": "Dítě",
+          "teenager": "Teenager",
+          "young_adult": "Mladý dospělý",
+          "adult": "Dospělý",
+          "adults_only": "Jen dospělí",
+          "mature_adult": "Zralý dospělý",
+          "senior_adult": "Starší dospělý"
+        },
+        "ethnicity": {
+          "label": "Etnicita",
+          "black": "Černá",
+          "caucasian": "kavkazský",
+          "east_asian": "východní Asiat",
+          "hispanic_latino": "Hispánská/latinská",
+          "middle_eastern": "Střední východ",
+          "mixed_race_person": "Osoba smíšená rasa",
+          "multiethnic_group": "Multietnická skupina",
+          "native_american_first_nations": "Native Američan/První národy",
+          "pacific_islander": "Tichomořský Ostrovan",
+          "south_asian": "Jihoasijský",
+          "southeast_asian": "Jihovýchodní Asiat"
+        },
+        "resolution": {
+          "label": "Rozlišení"
+        },
+        "duration": {
+          "label": "Doba trvání"
+        },
+        "more": {
+          "label": "Více",
+          "safe": "Safe (vyloučit nahotu)",
+          "exclude_editorial_use_only": "Vyloučte pouze „pouze redakční použití“",
+          "embed_content_only": "Zabudovatelné obrázky"
+        },
+        "minimumSize": {
+          "label": "Rozlišení obrazu",
+          "large": "12 MP a větší",
+          "x_large": "16 MP a větší",
+          "xx_large": "21 MP a větší"
+        },
+        "compositions": {
+          "label": "Styl obrázku",
+          "abstract": "Abstraktní",
+          "portrait": "Portrét",
+          "close_up": "Detail",
+          "sparse": "Řídká",
+          "cut_out": "Vystříhnout",
+          "full_frame": "Plný rám",
+          "copy_space": "Kopírovat prostor",
+          "macro": "Makro",
+          "still_life": "Stálý život"
+        },
+        "videoCompositions": {
+          "label": "Složení",
+          "close_up": "Detail",
+          "candid": "Upřímný",
+          "looking_at_camera": "Při pohledu na kameru"
+        },
+        "frameRates": {
+          "label": "Snímková frekvence"
+        },
+        "viewpoint": {
+          "label": "Hledisko",
+          "lockdown": "Izolování",
+          "panning": "Posouvání",
+          "tracking_shot": "Sledování výstřelu",
+          "aerial_view": "Letecký pohled",
+          "high_angle_view": "Pohled na vysoký úhel",
+          "low_angle_view": "Zobrazit nízký úhel",
+          "tilt": "Náklon",
+          "point_of_view": "Úhel pohledu"
+        },
+        "imageTechniques": {
+          "label": "Technika obrazu",
+          "realtime": "Reálný čas",
+          "time_lapse": "Časová prodleva",
+          "slow_motion": "Zpomalený pohyb",
+          "color": "Barva",
+          "black_and_white": "Černý a bílý",
+          "animation": "Animace",
+          "selective_focus": "Selektivní zaostření"
+        },
+        "summary": {
+          "label": "Filtry",
+          "color": "Color: {{color}}",
+          "number_of_people": {
+            "none": "Bez lidí",
+            "one": "S jednou osobou",
+            "two": "Se dvěma lidmi",
+            "group": "Se skupinovými lidmi"
+          },
+          "license_type": {
+            "all": "Všechny typy",
+            "creative": "Tvořivý",
+            "editorial": "Redakční"
+          },
+          "orientations": {
+            "square": "Náměstí",
+            "vertical": "Vertikální",
+            "horizontal": "Horizontální",
+            "panoramic_horizontal": "Panoramatický horizontální",
+            "panoramic_vertical": "Panoramatický vertikální"
+          },
+          "minimum_size": {
+            "large": "12 MP a větší",
+            "x_large": "16 MP a větší",
+            "xx_large": "21 MP a větší"
+          },
+          "compositions": {
+            "abstract": "Abstraktní",
+            "portrait": "Portrét",
+            "close_up": "Detail",
+            "sparse": "Řídká",
+            "cut_out": "Vystříhnout",
+            "full_frame": "Plný rám",
+            "copy_space": "Kopírovat prostor",
+            "macro": "Makro",
+            "still_life": "Stálý život"
+          },
+          "image_techniques": {
+            "realtime": "Reálný čas",
+            "time_lapse": "Časová prodleva",
+            "slow_motion": "Zpomalený pohyb",
+            "color": "Barva",
+            "black_and_white": "Černý a bílý",
+            "animation": "Animace",
+            "selective_focus": "Selektivní zaostření"
+          },
+          "viewpoints": {
+            "lockdown": "Izolování",
+            "panning": "Posouvání",
+            "tracking_shot": "Sledování výstřelu",
+            "aerial_view": "Letecký pohled",
+            "high_angle_view": "Pohled na vysoký úhel",
+            "low_angle_view": "Zobrazit nízký úhel",
+            "tilt": "Náklon",
+            "point_of_view": "Úhel pohledu"
+          },
+          "video_compositions": {
+            "close_up": "Detail",
+            "candid": "Upřímný",
+            "looking_at_camera": "Při pohledu na kameru"
+          },
+          "license_models": {
+            "rightsready": "PŘIPRAVENÁ PRÁVA",
+            "royaltyfree": "Bez autorských poplatků",
+            "all": "RF a RR"
+          },
+          "exclude_nudity": "Safe (vyloučit nahotu)",
+          "exclude_editorial_use_only": "Vyloučte pouze „pouze redakční použití“",
+          "embed_content_only": "Zabudovatelné obrázky"
+        }
+      },
+      "purchase": {
+        "select_plan": "Vyberte plán",
+        "select_format": "Vyberte formát a velikost",
+        "manage_plans": "Spravujte plány",
+        "format": "Vyberte formát a velikost",
+        "credit": "Kredit",
+        "credits": "Kredity",
+        "plan_exceeded": "Plán překročil",
+        "size": {
+          "x_small": "X malé",
+          "small": "Malý",
+          "medium": "Střední",
+          "large": "Velký",
+          "x_large": "X velké",
+          "xx_large": "Xx velké",
+          "vector": "Vektor"
+        },
+        "credits_remaining": "Zbytky kreditů",
+        "media_type_not_included": "Váš současný plán nezahrnuje tento {{mediaType}}",
+        "images": "snímky",
+        "videos": "videa",
+        "days_left": "zbývá dnů",
+        "credits_balance_too_small": "Zůstatek kreditů je příliš malý",
+        "collection": "Sbírka",
+        "item_id": "Tvořivý #",
+        "license_type": "Typ licence",
+        "release_info": "Informace o uvolnění",
+        "location": "Umístění",
+        "description": "Popis",
+        "rightsmanaged": "Spravovaná práva/připravená na práva",
+        "royaltyfree": "Bez autorských poplatků",
+        "cost": "Náklady"
+      },
+      "buttons": {
+        "next": "další",
+        "upload": "nahrát",
+        "purchase": "Získat"
+      }
+    },
+    "istock": {
+      "no_auth_title": "Nahrajte soubory z vašeho účtu iStock by Getty Images.",
+      "no_auth_action": "Připojte se k IStock",
+      "no_auth_statement": "IStock by Getty Images je jedním z předních světových trhů s obsahem obsahu a nabízí miliony ručně vybraných prémiových obrázků za směšně nízké ceny, které od nás můžete získat pouze.",
+      "reg_link_text": "Kliknutím sem vytvořte účet iStock by Getty Images",
+      "select": "Vybrat",
+      "search": {
+        "placeholder": "Vyhledávání...",
+        "reset": "Resetovat vyhledávání"
+      },
+      "media_types": {
+        "images": "snímky",
+        "videos": "Videa"
+      },
+      "media_types_singular": {
+        "images": "obraz",
+        "videos": "video"
+      },
+      "popular_categories": "Populární kategorie",
+      "diversity_categories": "Kategorie rozmanitosti",
+      "filters": {
+        "toggle_filters_button": "Filtry",
+        "clear": "Průhledná",
+        "sort_options": {
+          "label": "Seřazeno podle",
+          "newest": "Nejnovější",
+          "best_match": "Nejlepší shoda",
+          "most_popular": "Nejoblíbenější",
+          "random": "Náhodný"
+        },
+        "orientation": {
+          "label": "Orientace",
+          "horizontal": "Horizontální",
+          "vertical": "Vertikální",
+          "square": "Náměstí",
+          "panoramic_horizontal": "Panoramatický horizontální",
+          "panoramic_vertical": "Panoramatický vertikální"
+        },
+        "number_of_people": {
+          "label": "Počet lidí",
+          "none": "Žádný",
+          "one": "Jeden",
+          "two": "Dva",
+          "group": "Skupina"
+        },
+        "license": {
+          "label": "Typ licence",
+          "all": "Všechno",
+          "creative": "Tvořivý",
+          "editorial": "Redakční"
+        },
+        "colors": {
+          "label": "Barvy"
+        },
+        "age_of_people": {
+          "label": "Stáří",
+          "baby": "Dítě",
+          "child": "Dítě",
+          "teenager": "Teenager",
+          "young_adult": "Mladý dospělý",
+          "adult": "Dospělý",
+          "adults_only": "Jen dospělí",
+          "mature_adult": "Zralý dospělý",
+          "senior_adult": "Starší dospělý"
+        },
+        "ethnicity": {
+          "label": "Etnicita",
+          "black": "Černá",
+          "caucasian": "kavkazský",
+          "east_asian": "východní Asiat",
+          "hispanic_latino": "Hispánská/latinská",
+          "middle_eastern": "Střední východ",
+          "mixed_race_person": "Osoba smíšená rasa",
+          "multiethnic_group": "Multietnická skupina",
+          "native_american_first_nations": "Native Američan/První národy",
+          "pacific_islander": "Tichomořský Ostrovan",
+          "south_asian": "Jihoasijský",
+          "southeast_asian": "Jihovýchodní Asiat"
+        },
+        "resolution": {
+          "label": "Rozlišení"
+        },
+        "duration": {
+          "label": "Doba trvání"
+        },
+        "more": {
+          "label": "Více",
+          "safe": "Safe (vyloučit nahotu)"
+        },
+        "summary": {
+          "label": "Filtry",
+          "color": "Color: {{color}}",
+          "license_type": {
+            "all": "Všechny typy",
+            "creative": "Tvořivý",
+            "editorial": "Redakční"
+          },
+          "number_of_people": {
+            "none": "Bez lidí",
+            "one": "S jednou osobou",
+            "two": "Se dvěma lidmi",
+            "group": "Se skupinovými lidmi"
+          },
+          "orientations": {
+            "horizontal": "Horizontální",
+            "vertical": "Vertikální",
+            "square": "Náměstí",
+            "panoramic_horizontal": "Panoramatický horizontální",
+            "panoramic_vertical": "Panoramatický vertikální"
+          },
+          "age_of_people": {
+            "baby": "Dítě",
+            "child": "Dítě",
+            "teenager": "Teenager",
+            "young_adult": "Mladý dospělý",
+            "adult": "Dospělý",
+            "adults_only": "Jen dospělí",
+            "mature_adult": "Zralý dospělý",
+            "senior_adult": "Starší dospělý"
+          },
+          "exclude_nudity": "Safe (vyloučit nahotu)"
+        }
+      },
+      "purchase": {
+        "select_plan": "Vyberte plán",
+        "select_format": "Vyberte formát a velikost",
+        "manage_plans": "Spravujte plány",
+        "format": "Vyberte formát a velikost",
+        "credit": "Kredit",
+        "credits": "Kredity",
+        "istock_photo_id": "IStock Photo ID",
+        "istock_video_id": "IStock Video ID",
+        "plan_exceeded": "Plán překročil",
+        "size": {
+          "small": "Malý",
+          "medium": "Střední",
+          "large": "Velký",
+          "x_large": "X velké",
+          "xx_large": "Xx velké",
+          "vector": "Vektor"
+        },
+        "credits_remaining": "Zbytky kreditů",
+        "media_type_not_included": "Váš současný plán nezahrnuje tento {{mediaType}}",
+        "images": "snímky",
+        "videos": "videa",
+        "days_left": "zbývá dnů",
+        "credits_balance_too_small": "Zůstatek kreditů je příliš malý",
+        "collection": "Sbírka",
+        "cost": "Náklady"
+      },
+      "buttons": {
+        "next": "další",
+        "upload": "nahrát",
+        "purchase": "Nákup"
+      }
+    },
+    "unsplash": {
+      "no_auth_title": "Přístup k milionům obrázků z Unsplash.",
+      "no_auth_action": "Připojte se k UNSPLASH",
+      "no_auth_statement": "Krásné, zdarma obrázky a fotografie, které si můžete stáhnout a používat pro jakýkoli projekt. Lepší než jakékoli licenční fotografie nebo fotografie.",
+      "select": "Vybrat",
+      "popular_categories": "Populární kategorie",
+      "editorial": "Redakční",
+      "filters": {
+        "toggle_filters_button": "Filtry",
+        "clear": "Průhledná",
+        "sort_options": {
+          "label": "Seřazeno podle",
+          "latest": "Nejnovější",
+          "oldest": "Nejstarší",
+          "relevant": "Relevantní",
+          "popular": "Populární"
+        },
+        "orientation": {
+          "label": "Orientace",
+          "portrait": "Portrét",
+          "landscape": "Krajina",
+          "squarish": "Squarish"
+        },
+        "categories": {
+          "label": "Kategorie"
+        },
+        "license": {
+          "label": "Typ licence",
+          "creative": "Tvořivý",
+          "editorial": "Redakční"
+        },
+        "colors": {
+          "label": "Barvy"
+        },
+        "summary": {
+          "label": "Filtry",
+          "color": "Color: {{color}}"
+        },
+        "filters_in": "v",
+        "color_types": {
+          "tones": "Tóny",
+          "black_and_white": "Černý a bílý"
+        }
+      },
+      "summary": {
+        "description": "Popis",
+        "permission": "Povolení",
+        "free_to_use": "Zdarma k použití",
+        "published_at": "Publikováno na",
+        "location": "Umístění",
+        "credit": "Kredit",
+        "format": "Vyberte formát a velikost",
+        "size": {
+          "small": "Malý",
+          "medium": "Střední",
+          "large": "Velký",
+          "original_size": "Původní velikost"
+        }
+      },
+      "colors": {
+        "orange": "oranžový",
+        "red": "Červené",
+        "yellow": "Žlutá",
+        "green": "Zelená",
+        "teal": "Šedozelená",
+        "blue": "Modrý",
+        "purple": "Nachový",
+        "magenta": "Purpurová",
+        "white": "Bílý",
+        "black": "Černá",
+        "black_and_white": "Černý a bílý"
+      }
+    },
+    "url": {
+      "inner_title": "Veřejná adresa URL souboru k nahrávání:",
+      "input_placeholder": "http: //remote.site.example/images/remote-image.jpg"
+    },
+    "metadataPage": {
+      "title": "Strukturované hodnoty metadat",
+      "subtitle": "1 vybraný obrázek",
+      "subtitle_plural": "{{count}} vybraných obrázků",
+      "tooltip": "Některá požadovaná pole metadat nejsou nastavena nebo jsou dodávané hodnoty neplatné.",
+      "upload": "nahrát",
+      "conflict_label": "Přepsat",
+      "intro": {
+        "openingText": "Následující pole můžete vyplnit a přidat nová metadata do svých obrázků při nahrávání.",
+        "conflictWarning": "Poznámka: Vyberte „Overwrite“ pro pole, kde chcete použít nové hodnoty na nové i nahrazené obrázky.",
+        "closingText": "Po nahrávání můžete medidata upravit pro jednotlivé obrázky z knihovny médií."
+      },
+      "closePrompt": "Jste si jisti, že chcete toto dialogové okno zavřít? Vaše soubory nebudou nahrány.",
+      "backPrompt": "Jsi si jistá? Váš výběr souboru a hodnoty metadat, které jste zadali, budou ztraceny.",
+      "approveCancel": "Ano",
+      "cancel": "zrušení",
+      "validationErrors": {
+        "string": {
+          "min": "Musí být alespoň {{min}} znaky.",
+          "max": "Nelze být více než {{max}} znaky.",
+          "minAndMax": "Musí být mezi {{min}}-{{max}} znaky dlouhé.",
+          "regex": "Musí zahrnovat pouze xxxx."
+        },
+        "integer": {
+          "lessThan": "Musí být menší než {{less}}.",
+          "lessThanEqual": "Nelze být více než {{max}}.",
+          "greaterThan": "Musí být více než {{více}}.",
+          "greaterThanEqual": "Musí to být alespoň {{min}}."
+        },
+        "number": {
+          "lessThan": "Musí být menší než {{less}}.",
+          "lessThanEqual": "Nelze být více než {{max}}.",
+          "greaterThan": "Musí být více než {{more}}.",
+          "greaterThanEqual": "Musí to být alespoň {{min}}."
+        },
+        "enum": {
+          "oneOf": "{{originalValue}} musí být jednou z výše uvedených možností."
+        },
+        "set": {
+          "oneOf": "{{originalValue}} musí být jednou z výše uvedených možností."
+        },
+        "date": {
+          "lessThan": "Musí být před {{max}}.",
+          "lessThanEqual": "Nemůže být po {{max}}.",
+          "greaterThan": "Musí být po {{min}}.",
+          "greaterThanEqual": "Nelze před {{min}}."
+        },
+        "stringError": "Musí být text.",
+        "numberError": "Musí být číslo.",
+        "integerError": "Musí být číslo.",
+        "dateError": "Musí být datum.",
+        "enumError": "Vyberte jednu ze zadaných možností.",
+        "setError": "Vyberte alespoň jednu ze zadaných možností.",
+        "required": "Toto pole je povinné.",
+        "integerTypeError": "Toto je celé číslo.",
+        "digitsLimitError": "Toto číslo nemůže být dlouhé více než 16 číslic.",
+        "unsupportedFields": "Kontaktujte prosím svého správce, existuje problém s následujícími volitelnými polími metadat:",
+        "unsupportedRequiredFields": "Kontaktujte prosím svého správce, existuje problém s následujícími povinnými polími metadat:"
+      }
+    }
+  }
+}
