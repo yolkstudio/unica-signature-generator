@@ -81,9 +81,9 @@ const Generated = ({
             <div
               style={{
                 fontFamily: "Arial",
-                fontSize: "24px",
+                fontSize: "22px",
                 fontStyle: "italic",
-                lineHeight: "24px",
+                lineHeight: "22px",
                 textAlign: "left",
                 color: "#5E528B",
                 marginBottom: "4px",
