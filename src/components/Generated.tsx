@@ -86,7 +86,7 @@ const Generated = ({
                   verticalAlign: "middle",
                 }}
               >
-                <table>
+                <table style={{ borderCollapse: "collapse" }}>
                   <tr
                     style={{
                       fontFamily: "Arial",
