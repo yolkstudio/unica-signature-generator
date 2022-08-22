@@ -212,10 +212,11 @@ const Generated = ({
             style={{
               height: "1px",
               padding: 0,
-              borderTop: "solid 1px #b4b6b8",
+              backgroundColor: "#b4b6b8",
               fontSize: "1px",
               width: "220px",
               maxWidth: "220px",
+              borderCollapse: "collapse",
             }}
             width="220px"
           >
