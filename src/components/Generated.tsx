@@ -156,7 +156,7 @@ const Generated = ({
       </tr>
 
       <tr>
-        <td style={{ paddingBottom: "4px", paddingTop: "4px" }}>
+        <td style={{ paddingBottom: "7px", paddingTop: "7px" }}>
           <img
             alt={"Unica logo"}
             height="50"
@@ -216,11 +216,12 @@ const Generated = ({
                 maxWidth: "220",
                 wordWrap: "break-word",
                 height: "1px",
+                borderCollapse: "collapse",
               }}
               width={"230"}
             >
               <tr>
-                <td>.</td>
+                <td style={{ height: "1px", padding: 0 }}>.</td>
               </tr>
             </table>
           </td>
