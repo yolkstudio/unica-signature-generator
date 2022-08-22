@@ -155,7 +155,7 @@ const Generated = ({
       </tr>
 
       <tr>
-        <td style={{ paddingBottom: "10px", paddingTop: "10px" }}>
+        <td style={{ paddingBottom: "16px", paddingTop: "16px" }}>
           <img
             alt={"Unica logo"}
             height="50"
