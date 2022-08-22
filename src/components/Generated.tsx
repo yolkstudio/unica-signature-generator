@@ -60,7 +60,7 @@ const Generated = ({
         <td>
           <table>
             <tr>
-              <td width="60">
+              <td style={{ paddingRight: "13px" }}>
                 <img
                   height="60"
                   width="60"
@@ -74,7 +74,6 @@ const Generated = ({
                     height: "auto",
                     width: "60px",
                     fontSize: "13px",
-                    marginRight: "10px",
                   }}
                 />
               </td>
@@ -156,7 +155,7 @@ const Generated = ({
       </tr>
 
       <tr>
-        <td style={{ paddingBottom: "7px", paddingTop: "7px" }}>
+        <td style={{ paddingBottom: "10px", paddingTop: "10px" }}>
           <img
             alt={"Unica logo"}
             height="50"
@@ -252,12 +251,11 @@ const Generated = ({
           fontFamily: "Arial",
           fontSize: "11px",
           lineHeight: "15px",
-
           color: "#a7a9ab",
           textDecoration: "none",
         }}
       >
-        <td>
+        <td style={{ paddingTop: "8px" }}>
           <a
             href="https://www.facebook.com/UnicaClinic/"
             style={{ color: "#5e528b", textDecoration: "none" }}
