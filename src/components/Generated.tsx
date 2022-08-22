@@ -38,8 +38,16 @@ const Generated = ({
   const url = avatar.toURL();
 
   return (
-    <div id={"table-root"} style={{ wordSpacing: "normal", width: "100%" }}>
-      <div
+    <table
+      id={"table-root"}
+      style={{
+        wordSpacing: "normal",
+        width: "370px",
+        borderSpacing: "6px",
+        borderCollapse: "separate",
+      }}
+    >
+      <tr
         className="mj-column-px-80 mj-outlook-group-fix"
         style={{
           fontSize: 0,
@@ -47,83 +55,83 @@ const Generated = ({
           direction: "ltr",
           verticalAlign: "middle",
           width: "100%",
-          display: "flex",
-          alignItems: "center",
         }}
       >
-        <img
-          height="auto"
-          src={url}
-          alt={"Portrait image"}
-          style={{
-            border: 0,
-            display: "block",
-            outline: "none",
-            textDecoration: "none",
-            height: "auto",
-            width: "60px",
-            fontSize: "13px",
-            marginRight: "16px",
-          }}
-          width={"60px"}
-        />
+        <td>
+          <table>
+            <tr>
+              <td width="60">
+                <img
+                  height="60"
+                  width="60"
+                  src={url}
+                  alt={"Portrait image"}
+                  style={{
+                    border: 0,
+                    display: "block",
+                    outline: "none",
+                    textDecoration: "none",
+                    height: "auto",
+                    width: "60px",
+                    fontSize: "13px",
+                    marginRight: "10px",
+                  }}
+                />
+              </td>
 
-        <div
-          className="mj-column-px-520 mj-outlook-group-fix"
-          style={{
-            fontSize: 0,
-            textAlign: "left",
-            verticalAlign: "middle",
-          }}
-        >
-          <div
-            style={{
-              fontFamily: "Arial",
-              fontSize: "22px",
-              fontStyle: "italic",
-              lineHeight: "22px",
-              textAlign: "left",
-              color: "#5E528B",
-              marginBottom: "4px",
-            }}
-          >
-            <strong>{name}</strong>
-          </div>
+              <td
+                className="mj-column-px-520 mj-outlook-group-fix"
+                style={{
+                  fontSize: 0,
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
+                <table>
+                  <tr
+                    style={{
+                      fontFamily: "Arial",
+                      fontSize: "22px",
+                      fontStyle: "italic",
+                      lineHeight: "22px",
+                      textAlign: "left",
+                      color: "#5E528B",
+                    }}
+                  >
+                    <td>
+                      <strong>{name}</strong>
+                    </td>
+                  </tr>
 
-          <div
-            style={{
-              fontFamily: "Arial",
-              fontSize: "8px",
-              letterSpacing: 2,
-              lineHeight: "8px",
-              textAlign: "left",
-              color: "#a7a9ab",
-            }}
-          >
-            {occupation.toUpperCase()}
-          </div>
-        </div>
-      </div>
+                  <tr
+                    style={{
+                      fontFamily: "Arial",
+                      fontSize: "8px",
+                      letterSpacing: 2,
+                      lineHeight: "8px",
+                      textAlign: "left",
+                      color: "#a7a9ab",
+                    }}
+                  >
+                    <td>{occupation.toUpperCase()}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-      <div
-        className="mj-column-per-100 mj-outlook-group-fix"
+      <tr
         style={{
-          fontSize: 0,
+          fontFamily: "Arial",
+          fontSize: "11px",
+          lineHeight: "15px",
           textAlign: "left",
-          verticalAlign: "top",
-          width: "100%",
-          marginTop: "16px",
+          color: "#a7a9ab",
         }}
       >
-        <div
-          style={{
-            fontFamily: "Arial",
-            fontSize: "11px",
-            lineHeight: "15px",
-            textAlign: "left",
-            color: "#a7a9ab",
-          }}
-        >
+        <td>
           <a
             href={`mailto:${email}`}
             style={{ color: "#5e528b", textDecoration: "none" }}
@@ -144,112 +152,126 @@ const Generated = ({
           >
             www.unica.cz
           </a>
-        </div>
-        <img
-          alt={"Unica logo"}
-          height="50px"
-          width={"100px"}
-          src="https://signatures.unica.cz/img/unica_logo.gif"
-          style={{
-            border: 0,
-            display: "block",
-            outline: "none",
-            textDecoration: "none",
-            height: "auto",
-            width: "100px",
-            maxWidth: "100px",
-            marginTop: "16px",
-            marginBottom: "16px",
-          }}
-        />
-        <div style={{ marginBottom: "16px" }}>
-          {(signatureType === SignatureType.PRAGUE ||
-            signatureType === SignatureType.BOTH) && (
-            <>
-              <div
-                style={{
-                  fontFamily: "Arial",
-                  fontSize: "13px",
-                  textAlign: "left",
-                  color: "#a7a9ab",
-                  marginBottom: "4px",
-                }}
-              >
-                <strong>Unica Praha</strong>
-              </div>
-              <div
-                style={{
-                  fontFamily: "Arial",
-                  fontSize: "11px",
-                  lineHeight: "15px",
-                  textAlign: "left",
-                  color: "#a7a9ab",
-                }}
-              >
-                Office Park Nove Butovice building C
-                <br />
-                Bucharova 2657/12 158 00 Praha - Stodulky
-              </div>
-            </>
-          )}
-          {signatureType === SignatureType.BOTH && (
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            alt={"Unica logo"}
+            height="50"
+            width={"100"}
+            src="https://signatures.unica.cz/img/unica_logo.gif"
+            style={{
+              border: 0,
+              display: "block",
+              outline: "none",
+              textDecoration: "none",
+              height: "auto",
+              width: "100px",
+              maxWidth: "100px",
+              marginTop: "16px",
+              marginBottom: "16px",
+            }}
+          />
+        </td>
+      </tr>
+
+      {(signatureType === SignatureType.PRAGUE ||
+        signatureType === SignatureType.BOTH) && (
+        <tr>
+          <td>
             <div
+              style={{
+                fontFamily: "Arial",
+                fontSize: "13px",
+                textAlign: "left",
+                color: "#a7a9ab",
+                marginBottom: "4px",
+              }}
+            >
+              <strong>Unica Praha</strong>
+            </div>
+            <div
+              style={{
+                fontFamily: "Arial",
+                fontSize: "11px",
+                lineHeight: "15px",
+                textAlign: "left",
+                color: "#a7a9ab",
+              }}
+            >
+              Office Park Nove Butovice building C
+              <br />
+              Bucharova 2657/12 158 00 Praha - Stodulky
+            </div>
+          </td>
+        </tr>
+      )}
+      {signatureType === SignatureType.BOTH && (
+        <tr>
+          <td>
+            <table
               style={{
                 borderTop: "solid 1px #b4b6b8",
                 fontSize: "1px",
-                width: "220px",
-                maxWidth: "220px",
-                marginBottom: "16px",
-                marginTop: "16px",
-                height: "1px",
+                maxWidth: "220",
+                wordWrap: "break-word",
+              }}
+              width={"230"}
+            >
+              <tr>
+                <td>.</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      )}
+      {(signatureType === SignatureType.BOTH ||
+        signatureType === SignatureType.BRNO) && (
+        <tr>
+          <td>
+            <div
+              style={{
+                fontFamily: "Arial",
+                fontSize: "13px",
+                lineHeight: "18px",
+                textAlign: "left",
+                color: "#a7a9ab",
+                marginBottom: "4px",
               }}
             >
-              .
+              <strong>Unica Brno</strong>
             </div>
-          )}
-          {(signatureType === SignatureType.BOTH ||
-            signatureType === SignatureType.BRNO) && (
-            <>
-              <div
-                style={{
-                  fontFamily: "Arial",
-                  fontSize: "13px",
-                  lineHeight: "18px",
-                  textAlign: "left",
-                  color: "#a7a9ab",
-                  marginBottom: "4px",
-                }}
-              >
-                <strong>Unica Brno</strong>
-              </div>
 
-              <div
-                style={{
-                  fontFamily: "Arial",
-                  fontSize: "11px",
-                  lineHeight: "15px",
-                  textAlign: "left",
-                  color: "#a7a9ab",
-                }}
-              >
-                Barvicova 833/53
-                <br />
-                602 00 Brno
-              </div>
-            </>
-          )}
-        </div>
+            <div
+              style={{
+                fontFamily: "Arial",
+                fontSize: "11px",
+                lineHeight: "15px",
+                textAlign: "left",
+                color: "#a7a9ab",
+              }}
+            >
+              Barvicova 833/53
+              <br />
+              602 00 Brno
+            </div>
+          </td>
+        </tr>
+      )}
 
-        <div
-          style={{
-            fontFamily: "Arial",
-            fontSize: "11px",
-            lineHeight: "15px",
-            textAlign: "left",
-            color: "#a7a9ab",
-            textDecoration: "none",
-          }}
-        >
+      <tr
+        style={{
+          fontFamily: "Arial",
+          fontSize: "11px",
+          lineHeight: "15px",
+
+          color: "#a7a9ab",
+          textDecoration: "none",
+        }}
+      >
+        <td>
           <a
             href="https://www.facebook.com/UnicaClinic/"
             style={{ color: "#5e528b", textDecoration: "none" }}
@@ -263,11 +285,11 @@ const Generated = ({
           >
             instagram
           </a>
-        </div>
+        </td>
+      </tr>
 
-        {/*[if mso | IE]></td></tr></table><![endif]*/}
-      </div>
-    </div>
+      {/*[if mso | IE]></td></tr></table><![endif]*/}
+    </table>
   );
 };
 
