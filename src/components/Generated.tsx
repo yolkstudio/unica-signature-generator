@@ -208,19 +208,8 @@ const Generated = ({
       )}
       {signatureType === SignatureType.BOTH && (
         <tr>
-          <td
-            style={{
-              height: "1px",
-              padding: 0,
-              backgroundColor: "#b4b6b8",
-              fontSize: "1px",
-              width: "220px",
-              maxWidth: "220px",
-              borderCollapse: "collapse",
-            }}
-            width="220px"
-          >
-            .
+          <td>
+            <hr />
           </td>
         </tr>
       )}
