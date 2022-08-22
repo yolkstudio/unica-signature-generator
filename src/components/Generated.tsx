@@ -7,8 +7,8 @@ import { FocusOn } from "@cloudinary/url-gen/qualifiers/focusOn";
 import { max } from "@cloudinary/url-gen/actions/roundCorners";
 import "../styles/components/Generated.scss";
 import { autoBrightness } from "@cloudinary/url-gen/actions/adjust";
-import { solid } from "@cloudinary/url-gen/actions/border";
 import { outline } from "@cloudinary/url-gen/actions/effect";
+import { format, quality } from "@cloudinary/url-gen/actions/delivery";
 
 const Generated = ({
   name,
@@ -31,142 +31,138 @@ const Generated = ({
     )
     .roundCorners(max())
     .adjust(autoBrightness())
-    .effect(outline().width(1).color("#a7a9ab"));
+    .effect(outline().width(1).color("#a7a9ab"))
+    .delivery(quality(90))
+    .delivery(format("png"));
 
   const url = avatar.toURL();
 
   return (
     <div id={"table-root"} style={{ wordSpacing: "normal", width: "100%" }}>
-      <div style={{ margin: "0px auto", maxWidth: "100%" }}>
-        <div
-          className="mj-column-px-80 mj-outlook-group-fix"
+      <div
+        className="mj-column-px-80 mj-outlook-group-fix"
+        style={{
+          fontSize: 0,
+          textAlign: "left",
+          direction: "ltr",
+          verticalAlign: "middle",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <img
+          height="auto"
+          src={url}
+          alt={"Portrait image"}
           style={{
-            fontSize: 0,
-            textAlign: "left",
-            direction: "ltr",
-            verticalAlign: "middle",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "16px",
+            border: 0,
+            display: "block",
+            outline: "none",
+            textDecoration: "none",
+            height: "auto",
+            width: "60px",
+            fontSize: "13px",
+            marginRight: "16px",
           }}
-        >
-          <img
-            height="auto"
-            src={url}
-            alt={"Portrait image"}
-            style={{
-              border: 0,
-              display: "block",
-              outline: "none",
-              textDecoration: "none",
-              height: "auto",
-              width: "60px",
-              fontSize: "13px",
-              marginRight: "16px",
-            }}
-            width={"60px"}
-          />
+          width={"60px"}
+        />
 
-          <div
-            className="mj-column-px-520 mj-outlook-group-fix"
-            style={{
-              fontSize: 0,
-              textAlign: "left",
-              direction: "ltr",
-              display: "inline-block",
-              verticalAlign: "middle",
-            }}
-          >
-            <div
-              style={{
-                fontFamily: "Arial",
-                fontSize: "22px",
-                fontStyle: "italic",
-                lineHeight: "22px",
-                textAlign: "left",
-                color: "#5E528B",
-                marginBottom: "4px",
-              }}
-            >
-              <strong>{name}</strong>
-            </div>
-
-            <div
-              style={{
-                fontFamily: "Arial",
-                fontSize: "8px",
-                letterSpacing: 2,
-                lineHeight: "8px",
-                textAlign: "left",
-                color: "#a7a9ab",
-              }}
-            >
-              {occupation.toUpperCase()}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style={{ margin: "0px auto", maxWidth: "100%" }}>
         <div
-          className="mj-column-per-100 mj-outlook-group-fix"
+          className="mj-column-px-520 mj-outlook-group-fix"
           style={{
             fontSize: 0,
             textAlign: "left",
-            direction: "ltr",
-            display: "inline-block",
-            verticalAlign: "top",
-            width: "100%",
+            verticalAlign: "middle",
           }}
         >
           <div
             style={{
               fontFamily: "Arial",
-              fontSize: "11px",
-              lineHeight: "15px",
+              fontSize: "22px",
+              fontStyle: "italic",
+              lineHeight: "22px",
+              textAlign: "left",
+              color: "#5E528B",
+              marginBottom: "4px",
+            }}
+          >
+            <strong>{name}</strong>
+          </div>
+
+          <div
+            style={{
+              fontFamily: "Arial",
+              fontSize: "8px",
+              letterSpacing: 2,
+              lineHeight: "8px",
               textAlign: "left",
               color: "#a7a9ab",
             }}
           >
-            <a
-              href={`mailto:${email}`}
-              style={{ color: "#5e528b", textDecoration: "none" }}
-            >
-              {email.toLowerCase()}
-            </a>{" "}
-            |{" "}
-            <a
-              href={`tel:${phone.split(" ").join("")}`}
-              style={{ color: "#5e528b", textDecoration: "none" }}
-            >
-              {phone}
-            </a>{" "}
-            |{" "}
-            <a
-              href="https://www.unica.cz"
-              style={{ color: "#5e528b", textDecoration: "none" }}
-            >
-              www.unica.cz
-            </a>
+            {occupation.toUpperCase()}
           </div>
-          <img
-            alt={"Unica banner"}
-            height="50px"
-            width={"100px"}
-            src="https://signatures.unica.cz/img/unica_logo.gif"
-            style={{
-              border: 0,
-              display: "block",
-              outline: "none",
-              textDecoration: "none",
-              height: "auto",
-              width: "100px",
-              maxWidth: "100px",
-              marginTop: "16px",
-              marginBottom: "16px",
-            }}
-          />
+        </div>
+      </div>
+
+      <div
+        className="mj-column-per-100 mj-outlook-group-fix"
+        style={{
+          fontSize: 0,
+          textAlign: "left",
+          verticalAlign: "top",
+          width: "100%",
+          marginTop: "16px",
+        }}
+      >
+        <div
+          style={{
+            fontFamily: "Arial",
+            fontSize: "11px",
+            lineHeight: "15px",
+            textAlign: "left",
+            color: "#a7a9ab",
+          }}
+        >
+          <a
+            href={`mailto:${email}`}
+            style={{ color: "#5e528b", textDecoration: "none" }}
+          >
+            {email.toLowerCase()}
+          </a>{" "}
+          |{" "}
+          <a
+            href={`tel:${phone.split(" ").join("")}`}
+            style={{ color: "#5e528b", textDecoration: "none" }}
+          >
+            {phone}
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://www.unica.cz"
+            style={{ color: "#5e528b", textDecoration: "none" }}
+          >
+            www.unica.cz
+          </a>
+        </div>
+        <img
+          alt={"Unica logo"}
+          height="50px"
+          width={"100px"}
+          src="https://signatures.unica.cz/img/unica_logo.gif"
+          style={{
+            border: 0,
+            display: "block",
+            outline: "none",
+            textDecoration: "none",
+            height: "auto",
+            width: "100px",
+            maxWidth: "100px",
+            marginTop: "16px",
+            marginBottom: "16px",
+          }}
+        />
+        <div style={{ marginBottom: "16px" }}>
           {(signatureType === SignatureType.PRAGUE ||
             signatureType === SignatureType.BOTH) && (
             <>
@@ -202,6 +198,7 @@ const Generated = ({
                 borderTop: "solid 1px #b4b6b8",
                 fontSize: "1px",
                 width: "220px",
+                maxWidth: "220px",
                 marginBottom: "16px",
                 marginTop: "16px",
                 height: "1px",
@@ -241,34 +238,34 @@ const Generated = ({
               </div>
             </>
           )}
-
-          <div
-            style={{
-              fontFamily: "Arial",
-              fontSize: "11px",
-              lineHeight: "15px",
-              textAlign: "left",
-              color: "#a7a9ab",
-              marginTop: "16px",
-            }}
-          >
-            <a
-              href="https://www.facebook.com/UnicaClinic/"
-              style={{ color: "#5e528b", textDecoration: "none" }}
-            >
-              facebook |{" "}
-            </a>
-
-            <a
-              href="https://www.instagram.com/unicaclinic/"
-              style={{ color: "#5e528b", textDecoration: "none" }}
-            >
-              instagram
-            </a>
-          </div>
-
-          {/*[if mso | IE]></td></tr></table><![endif]*/}
         </div>
+
+        <div
+          style={{
+            fontFamily: "Arial",
+            fontSize: "11px",
+            lineHeight: "15px",
+            textAlign: "left",
+            color: "#a7a9ab",
+            textDecoration: "none",
+          }}
+        >
+          <a
+            href="https://www.facebook.com/UnicaClinic/"
+            style={{ color: "#5e528b", textDecoration: "none" }}
+          >
+            facebook
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://www.instagram.com/unicaclinic/"
+            style={{ color: "#5e528b", textDecoration: "none" }}
+          >
+            instagram
+          </a>
+        </div>
+
+        {/*[if mso | IE]></td></tr></table><![endif]*/}
       </div>
     </div>
   );
