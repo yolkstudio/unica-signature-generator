@@ -208,22 +208,18 @@ const Generated = ({
       )}
       {signatureType === SignatureType.BOTH && (
         <tr>
-          <td>
-            <table
-              style={{
-                borderTop: "solid 1px #b4b6b8",
-                fontSize: "1px",
-                maxWidth: "220",
-                wordWrap: "break-word",
-                height: "1px",
-                borderCollapse: "collapse",
-              }}
-              width={"230"}
-            >
-              <tr>
-                <td style={{ height: "1px", padding: 0 }}>.</td>
-              </tr>
-            </table>
+          <td
+            style={{
+              height: "1px",
+              padding: 0,
+              borderTop: "solid 1px #b4b6b8",
+              fontSize: "1px",
+              width: "220px",
+              maxWidth: "220px",
+            }}
+            width="220px"
+          >
+            .
           </td>
         </tr>
       )}
