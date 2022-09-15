@@ -192,7 +192,6 @@ const Generated = ({
               style={{
                 fontFamily: "Arial",
                 fontSize: "10px",
-                lineHeight: "15px",
                 textAlign: "left",
                 color: "#a7a9ab",
               }}
@@ -219,7 +218,6 @@ const Generated = ({
               style={{
                 fontFamily: "Arial",
                 fontSize: "11px",
-                lineHeight: "18px",
                 textAlign: "left",
                 color: "#a7a9ab",
               }}
@@ -231,7 +229,6 @@ const Generated = ({
               style={{
                 fontFamily: "Arial",
                 fontSize: "10px",
-                lineHeight: "15px",
                 textAlign: "left",
                 color: "#a7a9ab",
               }}
