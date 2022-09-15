@@ -90,9 +90,9 @@ const Generated = ({
                   <tr
                     style={{
                       fontFamily: "Arial",
-                      fontSize: "22px",
+                      fontSize: "20px",
                       fontStyle: "italic",
-                      lineHeight: "22px",
+                      lineHeight: "20px",
                       textAlign: "left",
                       color: "#5E528B",
                     }}
@@ -155,7 +155,7 @@ const Generated = ({
       </tr>
 
       <tr>
-        <td style={{ paddingBottom: "16px", paddingTop: "16px" }}>
+        <td style={{ paddingBottom: "16px", paddingTop: "13px" }}>
           <img
             alt={"Unica logo"}
             height="50"
@@ -181,10 +181,9 @@ const Generated = ({
             <div
               style={{
                 fontFamily: "Arial",
-                fontSize: "13px",
+                fontSize: "11px",
                 textAlign: "left",
                 color: "#a7a9ab",
-                marginBottom: "4px",
               }}
             >
               <strong>Unica Praha</strong>
@@ -192,7 +191,7 @@ const Generated = ({
             <div
               style={{
                 fontFamily: "Arial",
-                fontSize: "11px",
+                fontSize: "10px",
                 lineHeight: "15px",
                 textAlign: "left",
                 color: "#a7a9ab",
@@ -219,11 +218,10 @@ const Generated = ({
             <div
               style={{
                 fontFamily: "Arial",
-                fontSize: "13px",
+                fontSize: "11px",
                 lineHeight: "18px",
                 textAlign: "left",
                 color: "#a7a9ab",
-                marginBottom: "4px",
               }}
             >
               <strong>Unica Brno</strong>
@@ -232,7 +230,7 @@ const Generated = ({
             <div
               style={{
                 fontFamily: "Arial",
-                fontSize: "11px",
+                fontSize: "10px",
                 lineHeight: "15px",
                 textAlign: "left",
                 color: "#a7a9ab",
@@ -249,13 +247,13 @@ const Generated = ({
       <tr
         style={{
           fontFamily: "Arial",
-          fontSize: "11px",
+          fontSize: "10px",
           lineHeight: "15px",
           color: "#a7a9ab",
           textDecoration: "none",
         }}
       >
-        <td style={{ paddingTop: "8px" }}>
+        <td style={{ paddingTop: "2px" }}>
           <a
             href="https://www.facebook.com/UnicaClinic/"
             style={{ color: "#5e528b", textDecoration: "none" }}
